@@ -1,4 +1,4 @@
-package com.question3;
+ackage question3;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ import javax.naming.InvalidNameException;
 public class  UserDefinedExceptionToCheckName {
 	
 	void validateName(String name) throws InvalidNameException { 
-		String[] names = { "akshay", "mahesh", " vaibhav", "aniket","atish","satvik"};
+		String[] names = { "vaibhav", "sumant", "pratik", "sid"};
         boolean found= false;
         for (String n: names)
         {
@@ -28,18 +28,18 @@ public class  UserDefinedExceptionToCheckName {
     }
 	public static void main(String[] args) {
 		 
-		UserDefinedExceptionToCheckName ck=new UserDefinedExceptionToCheckName();
+		UserDefinedExceptionToCheckName jck=new UserDefinedExceptionToCheckName();
 	        Scanner sc=new Scanner(System.in);
-	        //asks for input from the user
+	    
 	        System.out.println("Enter Name:");
 	        String name = sc.next();
 	        try
 	        {
-	            ck.validateName(name);
+	            jck.validateName(name);
 	        }
 	        catch(InvalidNameException e) 
 	        {
-	        	// exception will be thrown if the name entered doesn't match
+	        	
 	            System.out.println("Invalid Name " +e);
 	        }
 	}
